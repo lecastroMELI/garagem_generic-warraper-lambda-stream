@@ -18,4 +18,12 @@ public class Garagem {
     public List<Veiculo> getListaVeiculos() {
         return listaVeiculos;
     }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public void setListaVeiculos(List<Veiculo> listaVeiculos) {
+        this.listaVeiculos = listaVeiculos;
+    }
 }
