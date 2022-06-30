@@ -3,9 +3,9 @@ package classes;
 public class Veiculo {
     private String modelo;
     private String marca;
-    private Double preco;
+    private Integer preco;
 
-    public Veiculo(String modelo, String marca, Double preco) {
+    public Veiculo(String modelo, String marca, Integer preco) {
         this.modelo = modelo;
         this.marca = marca;
         this.preco = preco;
@@ -19,7 +19,7 @@ public class Veiculo {
         return marca;
     }
 
-    public Double getPreco() {
+    public Integer getPreco() {
         return preco;
     }
 
@@ -31,7 +31,7 @@ public class Veiculo {
         this.marca = marca;
     }
 
-    public void setPreco(Double preco) {
+    public void setPreco(Integer preco) {
         this.preco = preco;
     }
 
