@@ -7,6 +7,7 @@ public class Main {
         List<Veiculo> listaVeiculos = Dados.getVeiculos();
 
         listaVeiculos.stream()
+            .sorted((v1, v2) -> v1.getMarca().compareTo(v2.getMarca()))
             .forEach(System.out::println);
     }
 }
