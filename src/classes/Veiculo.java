@@ -1,6 +1,6 @@
 package classes;
 
-public class Veiculo {
+public class Veiculo implements Comparable<Veiculo>{
     private String modelo;
     private String marca;
     private Integer preco;
@@ -42,5 +42,18 @@ public class Veiculo {
             ", marca: '" + marca + '\'' +
             ", preco: '" + preco +
             '}';
+    }
+
+    @Override
+    public int compareTo(Veiculo outroVeiculo) {
+        if(outroVeiculo.preco < this.preco) {
+            return -1;
+        } else {
+            if (outroVeiculo.preco > this.preco) {
+                return 1;
+            } else {
+                return 0;
+            }
+        }
     }
 }
