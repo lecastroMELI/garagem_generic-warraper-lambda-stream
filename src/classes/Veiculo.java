@@ -3,7 +3,7 @@ package classes;
 public class Veiculo implements Comparable<Veiculo>{
     private String modelo;
     private String marca;
-    private Integer preco;
+    private double preco;
 
     public Veiculo(String modelo, String marca, Integer preco) {
         this.modelo = modelo;
@@ -19,7 +19,7 @@ public class Veiculo implements Comparable<Veiculo>{
         return marca;
     }
 
-    public Integer getPreco() {
+    public double getPreco() {
         return preco;
     }
 
@@ -31,7 +31,7 @@ public class Veiculo implements Comparable<Veiculo>{
         this.marca = marca;
     }
 
-    public void setPreco(Integer preco) {
+    public void setPreco(double preco) {
         this.preco = preco;
     }
 
