@@ -54,4 +54,15 @@ public class Garagem {
         // printt da lista
         listaVeiculos.forEach(System.out::println);
     }
+
+    // LISTAR TODOS OS VEÍCULOS ORDENADOS POR MORDELO E DEPOIS POR VALOR
+    public void ordenarPorMarcaEValor() {
+        System.out.println("__________________________________________________________________________________");
+        System.out.println("Ordernados por Modelo e por Valor de forma descrescente de valor");
+
+        listaVeiculos.stream()
+            .sorted((v1, v2) -> v1.getModelo().compareTo(v2.getModelo())) // por marca
+            .sorted() // por valor usando o compareTo da classe Veículo como parâmetro
+            .forEach(System.out::println);
+    }
 }
