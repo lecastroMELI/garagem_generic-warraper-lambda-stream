@@ -1,6 +1,7 @@
 package classes;
 
-public class Veiculo implements Comparable<Veiculo>{
+public class Veiculo implements Comparable<Veiculo> {
+// public class Veiculo {
     private String modelo;
     private String marca;
     private double preco;
@@ -46,7 +47,8 @@ public class Veiculo implements Comparable<Veiculo>{
 
     @Override
     public int compareTo(Veiculo outroVeiculo) {
-        if(outroVeiculo.preco < this.preco) {
+        // SINAL DE < PARA A ORDENAÇÃO SER DECRESCENTE
+        if (outroVeiculo.preco < this.preco) {
             return -1;
         } else {
             if (outroVeiculo.preco > this.preco) {

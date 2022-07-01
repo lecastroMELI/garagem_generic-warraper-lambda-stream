@@ -44,6 +44,8 @@ public class Main {
 
         //------------------- OUTRA FORMA DE FAZER - CRIANDO MÉTODOS DENTRO DA CLASSE GARAGEM --------------------//
         // (obs. os stream acima poderiam estar todos lá)
-        garagem.aplicarDescontoGeral(100.0);
+        garagem.aplicarDescontoGeral(10.0);
+
+        garagem.ordenarDescrescentemente();
     }
 }

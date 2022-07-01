@@ -27,11 +27,19 @@ public class Garagem {
         this.listaVeiculos = listaVeiculos;
     }
 
+    // EXIBIR NA TELA EM ORDEM DECRESCENTE DE PREÇO
+    public void ordenarDescrescentemente() {
+        System.out.println("Ordenados Decrescentemente");
+        // O .sorted() NÃO PRECISA DE PARÂMETRO, PQ FOI IMPLEMENTADO O MÉTODO compareTo NA CLASSE VEÍCULO
+        listaVeiculos.stream().sorted().forEach(System.out::println);
+    }
+
     //--------- IMPLEMENTAÇÕES ABAIXO REALIAZADAS COM BASE NO REPO:
     //--------- https://github.com/MauriKlein/com.dh.meli.LambdaEStream
 
+
     // APLICAR DESCONTO EM TODOS OS VEÍCULOS
-    public void aplicarDescontoGeral(Double porcentagemDesconto){
+    public void aplicarDescontoGeral(Double porcentagemDesconto) {
         System.out.println("__________________________________________________________________________________");
         System.out.println("Listando os veículos após a aplicação do desconto de " + porcentagemDesconto + "%.");
         System.out.println("----------------------------------------------------------------------------------");
