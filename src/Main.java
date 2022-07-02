@@ -46,6 +46,6 @@ public class Main {
         // (obs. os stream acima poderiam estar todos lá)
         garagem.aplicarDescontoGeral(10.0);
         garagem.ordenarDescrescentemente();
-        garagem.ordenarPorMarcaEValor();
+        garagem.ordenarPorModeloEValor();
     }
 }

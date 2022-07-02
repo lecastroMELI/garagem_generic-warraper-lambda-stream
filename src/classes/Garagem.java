@@ -56,7 +56,7 @@ public class Garagem {
     }
 
     // LISTAR TODOS OS VEÍCULOS ORDENADOS POR MORDELO E DEPOIS POR VALOR
-    public void ordenarPorMarcaEValor() {
+    public void ordenarPorModeloEValor() {
         System.out.println("__________________________________________________________________________________");
         System.out.println("Ordernados por Modelo e por Valor de forma descrescente de valor");
 
